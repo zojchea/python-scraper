@@ -101,6 +101,24 @@ pytest tests/
 
 ---
 
+## ⚠️ Important Note on Limitations
+
+This scraper is implemented using `requests` and `BeautifulSoup`, which works for fetching public product data from Newegg under normal conditions. However, Newegg uses Cloudflare protection that may trigger a CAPTCHA challenge after several requests or depending on network behavior.
+
+When this happens, the page content returned by requests is no longer the actual product page, but a Cloudflare challenge or CAPTCHA screen. This will cause the scraper to fail in collecting real product data.
+
+The proper workaround in such cases involves using:
+
+- `Selenium` with a real browser, which can render JavaScript and solve Cloudflare challenges.
+
+- Rotating proxies or residential IPs to avoid rate-limiting and detection.
+
+During development, I tested multiple free proxy options, but none were stable, fast, or reliable enough to maintain consistent scraping. All either timed out or failed HTTPS handshakes.
+
+For production-grade scraping, integrating paid proxy services (such as ScraperAPI or Smartproxy) or browser automation tools (such as undetected-chromedriver) is highly recommended.
+
+---
+
 ## ✨ Author
 
 **Zojche Atanasova**  
