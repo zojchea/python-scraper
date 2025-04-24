@@ -1,0 +1,26 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# PyCharm IDE settings
+.idea/
+`
+# Logs
+logs/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Test output
+*.pytest_cache/
+.cache/
+.pytest_cache/
+tests/.pytest_cache/
+
