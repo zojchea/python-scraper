@@ -11,8 +11,6 @@ env/
 .idea/
 `
 # Logs
-logs/
-*.log
 
 # OS-specific files
 .DS_Store
