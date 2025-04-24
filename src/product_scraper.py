@@ -1,3 +1,16 @@
+"""
+Product Scraper Module for Newegg
+
+This module handles the web scraping logic for collecting product information
+from Newegg based on a search query. It uses BeautifulSoup to parse HTML and
+`requests` to handle HTTP requests.
+
+Functions:
+- get_product_links(max_products): Collects product URLs from paginated search results.
+- parse_product_page(url, retries): Extracts product details from an individual product page.
+- scrape_all_products(): Scrapes multiple products and returns the full dataset.
+"""
+
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import requests

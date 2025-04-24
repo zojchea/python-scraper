@@ -1,7 +1,7 @@
 {
   "base_url": "https://www.newegg.com/",
   "search_query": "graphics+card",
-  "max_products": 10,
+  "max_products": 500,
   "output_file": "../exported_data/newegg_products_{datetime}.csv",
   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
   "delay_between_requests": 1.5

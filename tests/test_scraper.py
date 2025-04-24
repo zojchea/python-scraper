@@ -1,3 +1,10 @@
+"""
+Unit tests for the product_scraper module.
+
+These tests validate that product links are correctly scraped
+from the Newegg HTML structure, using mocked HTTP responses.
+"""
+
 import unittest
 from unittest.mock import patch, MagicMock
 

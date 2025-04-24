@@ -1,3 +1,10 @@
+"""
+Unit tests for utility functions in the Newegg scraper project.
+
+This test ensures that polite_delay introduces a delay
+within a specified range to mimic human browsing behavior.
+"""
+
 from src.utils import polite_delay
 import time
 

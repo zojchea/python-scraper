@@ -1,3 +1,9 @@
+"""
+Utility functions for the Newegg scraper project.
+
+Includes delay logic to prevent overwhelming the target website.
+"""
+
 import time
 import random
 

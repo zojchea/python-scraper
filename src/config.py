@@ -2,6 +2,12 @@ import os
 import json
 from datetime import datetime
 
+"""
+Configuration loader for the Newegg product scraper.
+Reads values from `scraper_config.json` and sets global constants
+for use across the scraping application.
+"""
+
 CONFIG_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "scraper_config.json"))
 
 with open(CONFIG_PATH, "r") as f:

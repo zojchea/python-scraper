@@ -1,3 +1,11 @@
+"""
+CSV Export Utility
+
+This module provides a single function to export scraped product data
+into a CSV file with predefined field names. The output filename is
+determined by the config or can be passed as a parameter.
+"""
+
 import csv
 import config
 
